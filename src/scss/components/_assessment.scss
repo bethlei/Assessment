@@ -12,7 +12,7 @@
 
 .actions {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   padding: $spacing-unit*3;
   color: #999;

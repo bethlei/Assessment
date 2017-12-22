@@ -13,8 +13,7 @@ button {
   color: #02b3e4;
   font-size: 1.2rem;
   font-weight: 400;
-  margin-left: $spacing-unit*2;
-  margin-right: $spacing-unit*2;
+  margin: $spacing-unit*0.5 $spacing-unit*2;
   padding: $spacing-unit $spacing-unit*3;
   border-radius: 4px;
 }
