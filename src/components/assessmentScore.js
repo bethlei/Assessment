@@ -26,10 +26,10 @@ class Score extends Component{
 
 	getRowDetails = (question, index) => {
 		return (
-			<div key={index}>
-				<div>{question.query}</div>
-				<div>{get(question, `answerArr[${question.userSelected.answerIndex}]`, '')}</div>
-				<div>{question.answerArr[question.correct.answerIndex]}</div>
+			<div key={index} className='row-wrapper'>
+				<div className='row-wrapper-question'>{question.query}</div>
+				<div className='your-answer'>{get(question, `answerArr[${question.userSelected.answerIndex}]`, '')}</div>
+				<div className='correct-answer'>{question.answerArr[question.correct.answerIndex]}</div>
 			</div>
 		)
 	}
@@ -41,13 +41,13 @@ class Score extends Component{
 	render() {
 		return (
 			<div className='score'>
-				<p>You scored {this.getTotalScore('userSelected.scoreValue')} out of {this.getTotalScore('correct.scoreValue')} on this assessment.</p>
-				<p>Compare your answers with the correct answers below.</p>
-				<div>
-					<div>
-						<div>Question</div>
-						<div>Your Answer</div>
-						<div>Correct Answer</div>
+				<p className='score-text'>You scored {this.getTotalScore('userSelected.scoreValue')} out of {this.getTotalScore('correct.scoreValue')} on this assessment</p>
+				<p className='score-text-alt'>Compare your answers with the correct answers below</p>
+				<div className='answer-wrapper'>
+					<div className='row-wrapper'>
+						<div className='row-wrapper-question'>Question</div>
+						<div className='your-answer'>Your Answer</div>
+						<div className='correct-answer'>Correct Answer</div>
 					</div>
 					{this.props.questions.map((question, index) => this.getRowDetails(question, index))}
 				</div>
