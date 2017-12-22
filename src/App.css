@@ -118,6 +118,11 @@ h1 {
 .correct-answer {
   width: 200px; }
 
+.header.row-wrapper-question,
+.header.your-answer,
+.header.correct-answer {
+  font-size: 1.4rem; }
+
 .question {
   font-size: 3rem;
   font-weight: 300;

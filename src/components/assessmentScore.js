@@ -45,9 +45,9 @@ class Score extends Component{
 				<p className='score-text-alt'>Compare your answers with the correct answers below</p>
 				<div className='answer-wrapper'>
 					<div className='row-wrapper'>
-						<div className='row-wrapper-question'>Question</div>
-						<div className='your-answer'>Your Answer</div>
-						<div className='correct-answer'>Correct Answer</div>
+						<div className='row-wrapper-question header'>Question</div>
+						<div className='your-answer header'>Your Answer</div>
+						<div className='correct-answer header'>Correct Answer</div>
 					</div>
 					{this.props.questions.map((question, index) => this.getRowDetails(question, index))}
 				</div>
