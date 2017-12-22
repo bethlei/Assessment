@@ -9,7 +9,10 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  color: #666; }
+  color: #666;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
 
 html,
 body,
@@ -18,26 +21,102 @@ body,
   height: 100%; }
 
 .App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
   text-align: center; }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
+  height: 45px; }
 
 .App-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+  height: 20vh;
+  padding: 16px;
   color: white; }
 
-.App-title {
-  font-size: 1.5em; }
+h1 {
+  margin: 0; }
 
-.App-intro {
-  font-size: large; }
+.App-title {
+  font-size: 2.5rem;
+  font-style: italic;
+  text-align: center;
+  font-weight: 300;
+  line-height: 1;
+  padding-top: 8px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 8px;
+  text-decoration: none; }
+
+.App-title-alt {
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: 300; }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+
+.assessment {
+  min-height: calc(100vh - 161px);
+  padding: 40px; }
+
+.assessment-wrapper {
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  padding: 16px;
+  min-height: 60vh; }
+
+.actions {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding: 24px;
+  color: #999;
+  font-size: 2rem;
+  font-weight: 300; }
+
+.step {
+  margin-left: 32px;
+  margin-right: 32px; }
+
+.question {
+  font-size: 3rem;
+  font-weight: 300;
+  padding-bottom: 24px; }
+
+.btn-group-vertical {
+  display: flex;
+  justify-content: center; }
+
+button {
+  color: #02b3e4;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 8px 24px;
+  border-radius: 4px; }
+
+.btn-group-vertical button {
+  color: #757575; }
+
+.welcome {
+  min-height: calc(100vh - 161px); }
+
+.welcome-header {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #999;
+  padding-top: 16px;
+  padding-bottom: 16px; }
+
+.link {
+  color: #02b3e4;
+  text-decoration: none; }

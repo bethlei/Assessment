@@ -1,0 +1,24 @@
+.question {
+  font-size: 3rem;
+  font-weight: 300;
+  padding-bottom: $spacing-unit*3;
+}
+
+.btn-group-vertical {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  color: #02b3e4;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-left: $spacing-unit*2;
+  margin-right: $spacing-unit*2;
+  padding: $spacing-unit $spacing-unit*3;
+  border-radius: 4px;
+}
+
+.btn-group-vertical button {
+  color: #757575;
+}

@@ -10,7 +10,7 @@ class App extends Component {
         <header className="App-header">
           <img src={ logo } className="App-logo" alt="logo" />
           <h1 className="App-title">GS Assessment App</h1>
-          <div>using React and Redux</div>
+          <div className="App-title-alt">using React and Redux</div>
         </header>
         <Routes />
       </div>

@@ -41,7 +41,7 @@ export default class Questionnaire extends Component {
 	render() {
 		return (
 			<div className='questionnaire'>
-				<div>{this.props.query}</div>
+				<div className='question'>{this.props.query}</div>
 				<ButtonGroup vertical block>
 					{this.props.answerArr.map((answerOption, index) => this.getAnswerOptionButtons(answerOption, index))}
 				</ButtonGroup>

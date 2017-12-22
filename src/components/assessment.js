@@ -39,11 +39,13 @@ class Assessment extends Component {
 
 		return (
 			<div className='assessment'>
-				<div>Step {this.props.questionIndex + 1} of {this.props.totalQuestions}</div>
-				<Questionnaire ref={q => this.questionnaire = q}link{ ...this.props.question } />
-				<div className='actions'>
-					<BackButton { ...buttonProps } />
-					<NextButton { ...buttonProps } />
+				<div className='assessment-wrapper'>
+					<div className='actions'>
+						<BackButton { ...buttonProps } />
+						<div className='step'>Step {this.props.questionIndex + 1} of {this.props.totalQuestions}</div>
+						<NextButton { ...buttonProps } />
+					</div>
+					<Questionnaire ref={q => this.questionnaire = q}link{ ...this.props.question } />
 				</div>
 			</div>
 		)

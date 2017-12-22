@@ -1,0 +1,16 @@
+.welcome {
+  min-height: calc(100vh - 161px);
+}
+
+.welcome-header {
+  font-size: 3rem;
+  font-weight:300;
+  color: #999;
+  padding-top: $spacing-unit*2;
+  padding-bottom: $spacing-unit*2;
+}
+
+.link {
+  color: #02b3e4;
+  text-decoration: none;
+}

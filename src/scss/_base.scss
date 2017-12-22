@@ -10,6 +10,9 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   color: $base-text-color;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 html,
 body,
